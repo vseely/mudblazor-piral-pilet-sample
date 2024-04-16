@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+	  <PiralInstance>../../app-shell/dist/emulator/app-shell-1.0.0.tgz</PiralInstance> 
+	  <NpmRegistry>https://registry.npmjs.org</NpmRegistry>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.4" />
+    <PackageReference Include="MudBlazor" Version="6.19.1" />
+    <PackageReference Include="Piral.Blazor.DevServer" Version="8.0.14" PrivateAssets="all" />
+    <PackageReference Include="Piral.Blazor.Utils" Version="8.0.14" />
+    <PackageReference Include="Piral.Blazor.Tools" Version="8.0.14" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".npmrc" Visible="false" />
+  </ItemGroup>
+
+</Project>

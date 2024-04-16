@@ -1,0 +1,44 @@
+{
+  "name": "app-shell",
+  "version": "1.0.0",
+  "description": "Example app shell using piral-blazor (Piral.Blazor.Core).",
+  "keywords": [
+    "piral"
+  ],
+  "scripts": {
+    "start": "piral debug",
+    "build": "piral build",
+    "build-spa-release": "piral build --type release --minify ",
+    "postinstall": "piral declaration",
+    "piral-publish": "piral publish --type emulator --log-level 1"
+  },
+  "app": "./src/index.html",
+  "pilets": {
+    "files": [],
+    "externals": [],
+    "scripts": {},
+    "validators": {},
+    "devDependencies": {},
+    "preScaffold": "",
+    "postScaffold": "",
+    "preUpgrade": "",
+    "postUpgrade": ""
+  },
+  "dependencies": {
+    "blazor": "8.0.14",
+    "piral": "1.5.3",
+    "piral-blazor": "1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-router": "^5.0.0",
+    "@types/react-router-dom": "^5.0.0",
+    "path-to-regexp": "6.2.1",
+    "piral-cli": "1.5.3",
+    "piral-cli-esbuild": "latest",
+    "sass": "^1.49.9",
+    "typescript": "^4.6.2"
+  }
+}

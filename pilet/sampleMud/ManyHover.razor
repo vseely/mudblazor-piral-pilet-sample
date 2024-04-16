@@ -1,0 +1,13 @@
+@page "/many"
+
+<h1>Many Hover Menus</h1>
+@for (int i = 0; i < 10; i++)
+{
+    <HoverMenu />
+}
+
+<MudButton Href="/single">other page</MudButton>
+<MudThemeProvider IsDarkMode="true" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
