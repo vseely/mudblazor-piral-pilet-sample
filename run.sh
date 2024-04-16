@@ -1,7 +1,7 @@
 cd app-shell
 npm i --legacy-peer-deps
 npm run build
-cd ../pilet/Pilet
+cd ../pilet/sampleMud
 dotnet build
-cd ../piral~/Pilet
+cd ../piral~/sampleMud
 npm start

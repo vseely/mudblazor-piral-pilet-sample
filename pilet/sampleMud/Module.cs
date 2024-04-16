@@ -13,6 +13,11 @@ namespace sampleMud
 		public static void ConfigureServices(IServiceCollection services)
 		{
 			// configure dependency injection here
+			//services.AddMudServices();
+		}
+
+		public static void ConfigureShared(IServiceCollection services)
+		{
 			services.AddMudServices();
 		}
 	}
